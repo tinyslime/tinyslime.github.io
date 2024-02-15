@@ -1,0 +1,40 @@
+/* Reset some default browser styles */
+* {
+    margin:  0;
+    padding:  0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Set the font family for the entire document */
+    line-height:  1.6; /* Improve readability */
+    color: #333; /* Set the text color */
+    background-color: #f9f9f9; /* Set a light background color */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50; /* Set the heading colors */
+}
+
+p {
+    margin-bottom:  1em; /* Add space below each paragraph */
+}
+
+a {
+    color: #3498db; /* Set the link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+a:hover {
+    color: #2980b9; /* Change link color on hover */
+}
+
+ul, ol {
+    padding-left:  20px; /* Indent lists */
+}
+
+/* Simple grid layout */
+.container {
+    width:  80%;
+    margin: auto; /* Center the container */
+}
