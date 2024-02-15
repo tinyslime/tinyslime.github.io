@@ -1,0 +1,7 @@
+Schedule for my project
+
+Week 1
+Complete all of the back end and front end for the project, styling it with animations, adding colours that contrast the dark background, completeing the about page, and completing the suggestions page.
+
+Week 2
+Start watching the movies, adding them to the website, and including a video reaction to the content.
