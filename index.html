@@ -3,86 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie website</title>
-    <style>
-        body {
-            font-family: Helvetica, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            text-align: center;
-            padding: 10px;
-            background-color: #444;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-        }
-        .content {
-            background-color: #fff;
-            padding: 20px;
-            margin-top: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            position: bottom;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Movie Website</h1>
+        <button class="button" type="button" onclick="window.location.href='index.html';">Home</button>
+        <button class="button" onclick="window.location.href='about.html';">About</button>
     </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="C:\Users\grays\OneDrive - EECD EDPE\Movie Website\Movie Website About.html">About</a>
-        <a href="#">Services</a>
-    </nav>
-    <div class="container">
-        <div class="content">
-            
-            <!--This is where the images of the movies and the links to them are.-->
-            
-            <h2>Featured Movies</h2>
-            <img src="https://m.media-amazon.com/images/M/MV5BYjFkNTU1NWEtMTQwYy00NzI4LWFmMGMtYWIyNGYyZjdhYzVmXkEyXkFqcGdeQXVyMTY3ODkyNDkz._V1_.jpg" alt="Paw Patrol: The Might Movie" 
-            width="330px"
-            height="495px"/>
-            <ul>
-                <a href="C:\Users\grays\OneDrive - EECD EDPE\Movie Website\Paw Patrol.html">Paw Patrol: The Mighty Movie</a>
-            </ul>
-            
-            <!--The links to some useful things-->
-            
-            <h2>External Links</h2>
-            <ul>
-                <li><a href="https://tubi.tv">A website to watch movies for free legally</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
-                <li><a href="https://poki.com/">Link 4</a></li>
-            </ul>
-        </div>
+    <div>
+        <button class="big-button">Movie of the day</button>
     </div>
-    <footer>
-        <p>&copy; 2024 Movie Website.</p>
-    </footer>
 </body>
 </html>
