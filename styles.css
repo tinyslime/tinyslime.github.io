@@ -1,40 +1,81 @@
-/* Reset some default browser styles */
-* {
-    margin:  0;
-    padding:  0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif; /* Set the font family for the entire document */
-    line-height:  1.6; /* Improve readability */
-    color: #333; /* Set the text color */
-    background-color: #f9f9f9; /* Set a light background color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* style the header */
+header {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+/* links for the buttons */
+/* unvisited link */
+a:link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+    text-decoration: none;
+  }
+  
+  /* selected link */
+  a:active {
+    color: white;
+    text-decoration: none;
+  }
+/* buttons in the middle of the header */
+.button {
+    background-color: #af4c4c;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #2c3e50; /* Set the heading colors */
+.button:hover {
+    transform: scale(1.05);
 }
 
-p {
-    margin-bottom:  1em; /* Add space below each paragraph */
+.big-button {
+    background-color: #af4c4c;
+    border: none;
+    color: white;
+    padding: 30px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
 }
-
-a {
-    color: #3498db; /* Set the link color */
-    text-decoration: none; /* Remove underline from links */
-}
-
-a:hover {
-    color: #2980b9; /* Change link color on hover */
-}
-
-ul, ol {
-    padding-left:  20px; /* Indent lists */
-}
-
-/* Simple grid layout */
-.container {
-    width:  80%;
-    margin: auto; /* Center the container */
+.big-button:hover {
+    transform: scale(1.05);
 }
