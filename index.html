@@ -7,12 +7,28 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <script>
+        window.transitionToPage = function(href) {
+    document.querySelector('body').style.opacity = 0
+    setTimeout(function() { 
+        window.location.href = href
+    }, 500)
+}
+
+document.addEventListener('DOMContentLoaded', function(event) {
+    document.querySelector('body').style.opacity = 1
+})
+    </script>
     <header>
-        <button class="button" type="button" onclick="window.location.href='index.html';">Home</button>
+        <button class="button" onclick="window.location.href='index.html';">Home</button>
         <button class="button" onclick="window.location.href='about.html';">About</button>
     </header>
     <div>
-        <button class="big-button">Movie of the day</button>
+        <h2>Click the button below to get the movie of the day</h2>
+    </div>
+
+    <div>
+        <button class="big-button" onclick="window.location.href='dailymovie.html';">Movie of the day</button>
     </div>
 </body>
 </html>
