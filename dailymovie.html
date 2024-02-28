@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="dailymovie.css">
+</head>
+<header>
+    <button class="button" type="button" onclick="window.location.href='index.html';">Home</button>
+    <button class="button" onclick="window.location.href='about.html';">About</button>
+</header>
+<body>
+    <script>
+        window.transitionToPage = function(href) {
+    document.querySelector('body').style.opacity = 0
+    setTimeout(function() { 
+        window.location.href = href
+    }, 500)
+}
+
+document.addEventListener('DOMContentLoaded', function(event) {
+    document.querySelector('body').style.opacity = 1
+})
+    </script>
+    <h3>Movie One</h3>
+        <button class="image-button" onclick="window.location.href='movie1.html';">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Two-parts_stone_nikogda_takih_ne_videl_vot.JPG/800px-Two-parts_stone_nikogda_takih_ne_videl_vot.JPG" alt=""
+            width=50%
+            height=auto>
+        </button>
+</body>
+</html>
+
+<!-- cant wait to be in P3 the only good class of my day! -->
