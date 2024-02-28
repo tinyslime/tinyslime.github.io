@@ -4,13 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="aboutstyles.css">
 </head>
 <body>
+    <script>
+                window.transitionToPage = function(href) {
+    document.querySelector('body').style.opacity = 0
+    setTimeout(function() { 
+        window.location.href = href
+    }, 500)
+}
+
+document.addEventListener('DOMContentLoaded', function(event) {
+    document.querySelector('body').style.opacity = 1
+})
+    </script>
     <header>
         <button class="button" type="button" onclick="window.location.href='index.html';">Home</button>
         <button class="button" onclick="window.location.href='about.html';">About</button>
     </header>
-    <p>Test</p>
+    <h1>About my Website</h1>
+    <p>I have created this website to share something I love doing to others — watching movies. I will be showing a new movie every day,
+        probably a movie you've never heard of. Past movies will still be avalible via another branch on the github.
+    </p>
 </body>
 </html>
