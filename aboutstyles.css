@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/* ms duchemins class is the most hour of my life */
+
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    background-color: black;
+    /* background image */
+    background-image: url("images/netflix-background.jpg")
+}
+/* style the header */
+header {
+    background-color: rgba(51, 51, 51, 0.9);
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+p {
+    font-size: medium;
+    padding: 50px 100px;
+}
+/* buttons in the middle of the header */
+.button {
+    background-color: #af4c4c;
+    border: 2px solid #cc2c2c;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    font-family: Poppins;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
