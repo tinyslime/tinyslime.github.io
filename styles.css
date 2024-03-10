@@ -11,9 +11,6 @@ body {
     align-items: center;
     height: 100vh;
     color: white;
-    /* for those transitions */
-        opacity: 0;
-        transition: opacity .5s;
     /* background image */
     background-image: url("images/netflix-background.jpg");
     background-color: black;
@@ -28,11 +25,22 @@ header {
     width: 100%
 }
 
+
 img {
-    top: 0;
-    left: 0;
-    max-width: 10%;
-    max-height: 10%;
+    position: relative;
+    float: right;
+    max-width: 20%;
+    max-height: 20%;
+    border: 5px solid rgba(51, 51, 51, 0.9);
+
+}
+
+.para {
+    top: 100px;
+    margin: 10%;
+    position: absolute;
+    background-color: rgba(51, 51, 51, 0.9);
+    border: 20px solid rgba(51, 51, 51, 0.9);
 }
 
 
